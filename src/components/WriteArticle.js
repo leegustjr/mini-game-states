@@ -92,7 +92,7 @@ class WriteArticle extends Component {
                           type="button"
                           onClick={(e) => {
                             e.preventDefault();
-                            this.props.history.push('/NoticeBoard');
+                            this.props.history.push('/main');
                           }}
                         >
                           Back

@@ -17,21 +17,50 @@ const initialState = {
   articles: [],
   article: [],
   nickname: 'guest',
-  leaderBoard: {},
+  leaderBoard: {
+    gameTitle: 'Game 1',
+    leaderboard: [
+      {
+        place: 1,
+        score: 240,
+        nickname: 'Superman',
+      },
+      {
+        place: 3,
+        score: 200,
+        nickname: 'Superwoman',
+      },
+      {
+        place: 5,
+        score: 160,
+        nickname: 'Superchild',
+      },
+      {
+        place: 2,
+        score: 220,
+        nickname: 'Superlady',
+      },
+      {
+        place: 4,
+        score: 180,
+        nickname: 'Superguy',
+      },
+    ],
+  },
   myScore: {
     nickname: 'black tardis',
     games: [
       {
         gameTitle: 'Game 1',
-        scores: [33, 48, 52],
+        scores: [50, 48, 52],
       },
       {
         gameTitle: 'Game 2',
-        scores: [22, 48, 52, 32],
+        scores: [70, 48, 52, 32],
       },
       {
         gameTitle: 'Game 3',
-        scores: [6, 11, 39, 32],
+        scores: [50, 48, 52],
       },
     ],
   },
