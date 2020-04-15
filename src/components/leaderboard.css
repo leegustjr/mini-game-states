@@ -1,0 +1,25 @@
+#num {
+  width: 10%;
+  float: left;
+}
+
+#table1 {
+  width: 30%;
+  float: left;
+}
+
+#table2 {
+  width: 30%;
+  float: left;
+}
+
+#table3 {
+  width: 30%;
+  float: left;
+}
+
+tr td {
+  line-height: 30px;
+  min-height: 30;
+  height: 30px;
+}

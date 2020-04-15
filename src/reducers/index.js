@@ -6,6 +6,8 @@ import {
   ARTICLES,
   LEADER_BOARD,
   CHANGE_TOKEN,
+  CHANGE_CURRENTARTICLE,
+  MY_SCORE,
 } from '../actions';
 
 const initialState = {
@@ -13,8 +15,55 @@ const initialState = {
   displayMode: 'Game',
   gametype: '1',
   articles: [],
+  article: [],
   nickname: 'guest',
-  leaderBoard: [],
+  leaderBoard: {
+    gameTitle: 'Game 1',
+    leaderboard: [
+      {
+        place: 1,
+        score: 240,
+        nickname: 'Superman',
+      },
+      {
+        place: 3,
+        score: 200,
+        nickname: 'Superwoman',
+      },
+      {
+        place: 5,
+        score: 160,
+        nickname: 'Superchild',
+      },
+      {
+        place: 2,
+        score: 220,
+        nickname: 'Superlady',
+      },
+      {
+        place: 4,
+        score: 180,
+        nickname: 'Superguy',
+      },
+    ],
+  },
+  myScore: {
+    nickname: 'black tardis',
+    games: [
+      {
+        gameTitle: 'Game 1',
+        scores: [50, 48, 52],
+      },
+      {
+        gameTitle: 'Game 2',
+        scores: [70, 48, 52, 32],
+      },
+      {
+        gameTitle: 'Game 3',
+        scores: [50, 48, 52],
+      },
+    ],
+  },
   token: {
     accessToken: '',
     refreshToken: '',
@@ -68,9 +117,23 @@ const reducers = (state = initialState, action) => {
       return {
         ...state,
         token: {
-          accesToken: action.token.accessToken,
+          accessToken: action.token.accessToken,
           refreshToken: action.token.refreshToken,
         },
+      };
+    }
+
+    case CHANGE_CURRENTARTICLE: {
+      return {
+        ...state,
+        article: action.article,
+      };
+    }
+
+    case MY_SCORE: {
+      return {
+        ...state,
+        myScore: action.myScore,
       };
     }
 

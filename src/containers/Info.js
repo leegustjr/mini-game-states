@@ -5,6 +5,7 @@ function mapReduxStateToReactProps(state) {
   return {
     isLogined: state.isLogined,
     nickname: state.nickname,
+    token: state.token,
   };
 }
 

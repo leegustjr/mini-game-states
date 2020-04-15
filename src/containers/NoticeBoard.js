@@ -4,6 +4,7 @@ import NoticeBoard from '../components/NoticeBoard';
 function mapReduxStateToReactProps(state) {
   return {
     articles: state.articles,
+    token: state.token,
   };
 }
 
@@ -11,6 +12,9 @@ function mapDispatchToProps(dispatch) {
   return {
     changeArticles: (articles) => {
       dispatch({ type: 'ARTICLES', articles });
+    },
+    changeCurrentArticle: (curArticle) => {
+      dispatch({ type: 'CHANGE_CURRENTARTICLE', article: curArticle });
     },
   };
 }

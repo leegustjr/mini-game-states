@@ -1,0 +1,24 @@
+#created {
+  font-weight: lighter;
+}
+
+#goBack {
+  background-color: transparent;
+  border-style: hidden;
+}
+
+#goBack {
+  margin-left: -35px;
+}
+
+#imgBox {
+  text-align: center;
+}
+
+img {
+  margin: 10px 10px 0 30px;
+}
+
+#contents {
+  font-weight: normal;
+}
