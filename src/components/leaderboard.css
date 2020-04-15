@@ -1,5 +1,10 @@
-#game1 {
-  width: 40%;
+#num {
+  width: 10%;
+  float: left;
+}
+
+#table1 {
+  width: 30%;
   float: left;
 }
 
