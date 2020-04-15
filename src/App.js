@@ -3,7 +3,7 @@ import React from 'react';
 import { withRouter, Route, Switch } from 'react-router-dom';
 import Welcome from './containers/Welcome';
 import Signup from './components/Signup';
-import Main from './components/Main';
+import Main from './containers/Main';
 import Game1 from './components/games/Game1';
 import NoticeBoard from './containers/NoticeBoard';
 import LeaderBoard from './containers/LeaderBoard';

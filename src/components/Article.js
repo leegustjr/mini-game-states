@@ -11,9 +11,7 @@ class Article extends Component {
     const { title, contents, created_at, likes, dislikes } = this.props.article;
     return (
       <section id="BG">
-        <Info />
         <div id="wrapper">
-          <Menu />
           <div className="page-content-wrapper">
             <div className="container-fluid">
               <div

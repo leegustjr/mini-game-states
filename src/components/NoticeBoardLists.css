@@ -1,0 +1,21 @@
+tr {
+  background-color: rgba(59, 0, 99, 0.6);
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+th {
+  text-align: center;
+}
+
+#deleteButton {
+  float: left;
+  margin-left: 10px;
+  color: white;
+}
+#what {
+  float: left;
+}

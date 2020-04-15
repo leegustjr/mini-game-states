@@ -12,7 +12,7 @@ import {
 
 const initialState = {
   isLogined: false,
-  displayMode: 'Game',
+  displayMode: 'NOTICEBOARD',
   gametype: '1',
   articles: [],
   article: [],
@@ -80,6 +80,7 @@ const reducers = (state = initialState, action) => {
     }
 
     case CHANGE_DISPLAYMODE: {
+      console.log(action.displayMode);
       return {
         ...state,
         displayMode: action.displayMode,

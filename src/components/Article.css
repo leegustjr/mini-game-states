@@ -17,8 +17,14 @@
 
 img {
   margin: 10px 10px 0 30px;
+  background-color: transparent;
 }
 
 #contents {
   font-weight: normal;
+  text-align: left;
+}
+
+table .thead-light th {
+  text-align: left;
 }

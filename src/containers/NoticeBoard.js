@@ -5,6 +5,7 @@ function mapReduxStateToReactProps(state) {
   return {
     articles: state.articles,
     token: state.token,
+    nickname: state.nickname,
   };
 }
 
