@@ -39,7 +39,7 @@ const TetrisWrap = styled.div`
   padding-top: 30px;
   overflow: hidden;
   line-height: normal;
-  height: 780px;
+  height: 550px;
 `;
 
 function mapReduxStateToReactProps(state) {
