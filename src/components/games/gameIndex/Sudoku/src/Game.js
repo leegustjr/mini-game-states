@@ -80,6 +80,7 @@ export const Game = (props) => {
     let startingScore = 60 * (1 + difficultyLevel / 8) * 30;
     let totalScore = startingScore - userScore;
 
+    totalScore = totalScore < 0 ? 0 : totalScore;
     axios
       .post(
         'http://13.209.41.64:4100/scores/scores',
