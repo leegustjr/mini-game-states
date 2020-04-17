@@ -1,0 +1,57 @@
+#created {
+  font-weight: lighter;
+}
+
+#back {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(59, 0, 99, 0.6);
+  color: white;
+  font-weight: bolder;
+  margin-left: 14px;
+  margin-bottom: 20px;
+}
+
+#goBack {
+  margin-left: -35px;
+}
+
+#imgBox {
+  text-align: center;
+}
+
+#imgBox span {
+  vertical-align: middle;
+  font-size: 40px;
+}
+
+#like {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  background-image: url('./images/like.png');
+  margin-right: 20px;
+}
+#dislike {
+  background-image: url('./images/dislike.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#contents {
+  font-weight: normal;
+  text-align: left;
+}
+
+table .thead-light th {
+  text-align: left;
+}
+
+#asdf {
+  background-image: url('./images/like.png');
+}

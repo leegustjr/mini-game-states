@@ -1,10 +1,10 @@
 #BG {
   background-image: url('./images/background.png');
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 #leftCon {
@@ -52,7 +52,7 @@
 #IDbox {
   height: 40px;
   width: 80%;
-  margin: 50px 10% 20px 10%;
+  margin: 20px 10%;
   border-radius: 10px;
 }
 
@@ -70,7 +70,7 @@
   color: white;
   height: 70px;
   width: 80%;
-  margin: 50px 10%;
+  margin: 10%;
   background-color: rgb(171, 71, 234);
   border-radius: 15px;
   border-color: rgb(171, 71, 234);
@@ -86,7 +86,7 @@
   color: white;
   height: 70px;
   width: 80%;
-  margin: 50px 10%;
+  margin: 10%;
   background-color: rgb(171, 71, 234);
   border-radius: 15px;
   border-color: rgb(171, 71, 234);

@@ -14,6 +14,12 @@ function mapDispatchToProps(dispatch) {
     changeDisplayMode: (displayMode) => {
       dispatch({ type: 'CHANGE_DISPLAYMODE', displayMode });
     },
+    setGame: (game) => {
+      dispatch({
+        type: 'SET_GAME',
+        game,
+      });
+    },
   };
 }
 

@@ -1,0 +1,28 @@
+#num {
+  width: 13%;
+  float: left;
+}
+
+#table1 {
+  width: 29%;
+  float: left;
+}
+
+#table2 {
+  width: 29%;
+  float: left;
+}
+
+#table3 {
+  width: 29%;
+  float: left;
+}
+
+#right {
+  text-align: right;
+  padding-right: 5px;
+}
+
+#middle {
+  text-align: center;
+}

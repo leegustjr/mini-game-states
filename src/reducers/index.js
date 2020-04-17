@@ -1,20 +1,57 @@
 import {
   IS_LOGINED,
   CHANGE_DISPLAYMODE,
-  GAME_TYPE,
+  SET_GAME,
   NICKNAME,
   ARTICLES,
   LEADER_BOARD,
   CHANGE_TOKEN,
+  CHANGE_CURRENTARTICLE,
+  MY_SCORE,
 } from '../actions';
 
 const initialState = {
   isLogined: false,
-  displayMode: 'Game',
-  gametype: '1',
+  displayMode: 'NOTICEBOARD',
+  currentGame: null,
   articles: [],
+  article: [],
   nickname: 'guest',
-  leaderBoard: [],
+  leaderBoard: {},
+  gameList: [
+    {
+      gameID: 0,
+      gameTitle: 'Snake',
+      thumbnail: 'snake.png',
+    },
+    {
+      gameID: 1,
+      gameTitle: 'Tetris',
+      thumbnail: 'tetris.jpg',
+    },
+    {
+      gameID: 2,
+      gameTitle: 'Sudoku',
+      thumbnail: 'sudoku.png',
+    },
+  ],
+  myScore: {
+    nickname: 'black tardis',
+    games: [
+      {
+        gameTitle: 'Snake',
+        scores: ['-'],
+      },
+      {
+        gameTitle: 'Tetris',
+        scores: ['-'],
+      },
+      {
+        gameTitle: 'Sudoku',
+        scores: ['-'],
+      },
+    ],
+  },
   token: {
     accessToken: '',
     refreshToken: '',
@@ -36,10 +73,10 @@ const reducers = (state = initialState, action) => {
         displayMode: action.displayMode,
       };
     }
-    case GAME_TYPE: {
+    case SET_GAME: {
       return {
         ...state,
-        gametype: action.gametype,
+        currentGame: action.gameID,
       };
     }
 
@@ -68,9 +105,44 @@ const reducers = (state = initialState, action) => {
       return {
         ...state,
         token: {
-          accesToken: action.token.accessToken,
+          accessToken: action.token.accessToken,
           refreshToken: action.token.refreshToken,
         },
+      };
+    }
+
+    case CHANGE_CURRENTARTICLE: {
+      return {
+        ...state,
+        article: action.article,
+      };
+    }
+
+    case 'CHANGE_MY_SNAKE_SCORE': {
+      const changeMyscore = state.myScore;
+      changeMyscore.nickname = action.nickname;
+      state.myScore.games[0].scores = action.myScore;
+      return {
+        ...state,
+        myScore: changeMyscore,
+      };
+    }
+    case 'CHANGE_MY_TETRIS_SCORE': {
+      const changeMyscore = state.myScore;
+      changeMyscore.nickname = action.nickname;
+      state.myScore.games[1].scores = action.myScore;
+      return {
+        ...state,
+        myScore: changeMyscore,
+      };
+    }
+    case 'CHANGE_MY_SUDOKU_SCORE': {
+      const changeMyscore = state.myScore;
+      changeMyscore.nickname = action.nickname;
+      state.myScore.games[2].scores = action.myScore;
+      return {
+        ...state,
+        myScore: action.myScore,
       };
     }
 

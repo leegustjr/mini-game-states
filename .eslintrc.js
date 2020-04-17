@@ -5,6 +5,7 @@ module.exports = {
     node: true,
   },
   extends: ['plugin:react/recommended', 'airbnb'],
+  parser: 'babel-eslint',
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -20,5 +21,6 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/prop-types': 0,
+    'no-alert': 0,
   },
 };
