@@ -21,7 +21,6 @@ const sendScore = (props) => {
       config,
     )
     .then(alert(`${nickname} 님의 점수는 ${props.game.points} 점 입니다.`))
-    .then((res) => console.log(res))
     .catch((err) => console.log(err));
 };
 

@@ -8,7 +8,6 @@ const shortid = require('shortid');
 
 const GameDisplay = (props) => {
   const { token } = props;
-  console.log('token?', token);
   const { currentGame, gameList } = props;
   const isGameSelected = () => {
     if (currentGame) {
