@@ -8,17 +8,6 @@ function Display() {
   return (
     <div className="page-content-wrapper">
       <div className="container-fluid">
-        <div
-          className="btn btn-link"
-          role="button"
-          id="menu-toggle"
-          href="#menu-toggle"
-        >
-          <i className="fa fa-bars"></i>
-          <div id="menu-toggle" className="btn btn-link">
-            menu
-          </div>
-        </div>
         <div className="row">
           <div className="col-md-12">
             <section id="display">

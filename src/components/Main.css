@@ -50,7 +50,6 @@
 }
 
 #display {
-  margin-top: 3%;
   height: 85vh;
   background-color: rgba(244, 159, 61, 0.39);
   border-radius: 20px;
@@ -280,14 +279,15 @@ body {
 }
 
 #textInSnake {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   color: white;
   font-weight: bolder;
   text-align: center;
 }
 
 #snakeGameTag canvas {
-  margin-left: 13%;
-  margin-top: 13%;
+  margin-left: 32%;
+  margin-right: 32%;
+  margin-top: 5%;
   margin-bottom: 4%;
 }
